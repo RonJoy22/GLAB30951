@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h3>Welcome, Enter The Employee Details</h3>
+
+<form th:action="@{/addEmployee}" method="post">
+    <table>
+        <tr>
+            <td><label path="name">Id</label></td>
+            <td><input type="text" name="id"  /></td>
+        </tr>
+        <tr>
+            <td><label path="id">Enter Name</label></td>
+            <td>  <input type="text" name="name" /></td>
+        </tr>
+        <tr>
+            <td><label path="contactNumber">Contact Number</label></td>
+            <td><input type="text" name="contactNumber" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
